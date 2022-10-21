@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test
 class PokerHandTest {
 
     @Test
-    internal fun `give me a good name`() {
-        true shouldBe true
+    fun `Compare 2 Cards`() {
+       Card(Suit.Club,3).shouldBeLessThan(Card(Suit.Diamond,4))
     }
 }
