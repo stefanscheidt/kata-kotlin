@@ -16,6 +16,9 @@ tasks.withType<KotlinCompile> {
 
 tasks.test {
     useJUnitPlatform()
+    testLogging {
+        events("passed", "skipped", "failed")
+    }
 }
 
 repositories {
@@ -31,7 +34,7 @@ dependencies {
     testImplementation(kotlin("test"))
 
     // https://kotest.io/docs/assertions/assertions.html
-    testImplementation("io.kotest:kotest-assertions-core:5.5.0")
+    testImplementation("io.kotest:kotest-assertions-core:5.5.1")
 
     // https://mockk.io/
     testImplementation("io.mockk:mockk:1.13.2")
