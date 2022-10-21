@@ -1,1 +1,1 @@
-rootProject.name = "kata-kotlin"
+rootProject.name = "poker-hand-kata"
