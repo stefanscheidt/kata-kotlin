@@ -1,7 +1,7 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-  kotlin("jvm") version "2.0.21"
+  kotlin("jvm") version "2.1.0"
   application
 
   id("com.diffplug.spotless") version "6.25.0"
