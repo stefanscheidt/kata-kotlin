@@ -4,7 +4,7 @@ plugins {
   kotlin("jvm") version "2.2.20"
   application
 
-  id("com.diffplug.spotless") version "7.2.1"
+  id("com.diffplug.spotless") version "8.0.0"
 }
 
 kotlin { jvmToolchain { this.languageVersion.set(JavaLanguageVersion.of(21)) } }
