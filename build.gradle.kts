@@ -1,4 +1,4 @@
-import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
 plugins {
   kotlin("jvm") version "2.2.20"
@@ -7,9 +7,10 @@ plugins {
   id("com.diffplug.spotless") version "8.0.0"
 }
 
-kotlin { jvmToolchain { this.languageVersion.set(JavaLanguageVersion.of(21)) } }
-
-tasks.withType<KotlinCompile> { kotlinOptions.jvmTarget = "21" }
+kotlin {
+  jvmToolchain(21)
+  compilerOptions { jvmTarget = JvmTarget.fromTarget("21") }
+}
 
 tasks.test {
   useJUnitPlatform()
@@ -20,12 +21,15 @@ application {
   mainClass.set("kata.MainKt") // The main class of the application
 }
 
-spotless { kotlin { ktfmt() } }
+spotless {
+  kotlin { ktfmt() }
+  kotlinGradle { ktfmt() }
+}
 
 repositories { mavenCentral() }
 
 dependencies {
-  // https://junit.org/junit5/docs/current/user-guide/
+  // https://docs.junit.org/current/user-guide/
   testImplementation(platform("org.junit:junit-bom:6.0.0"))
   testImplementation("org.junit.jupiter:junit-jupiter")
 
