@@ -1,7 +1,7 @@
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
 plugins {
-  kotlin("jvm") version "2.2.20"
+  kotlin("jvm") version "2.2.21"
   application
 
   id("com.diffplug.spotless") version "8.0.0"
