@@ -1,6 +1,6 @@
 # kata-kotlin
 
-Baseline for katas using Kotlin with JUnit 5.
+Baseline for katas using Kotlin with JUnit 6.
 
 ## Prerequisites
 
@@ -16,11 +16,11 @@ Check out [the Gradle build file](./build.gradle.kts) for already added dependen
 Build:
 
 ```shell
-./gradew build
+./gradlew build
 ```
 
 Run:
 
 ```shell
-./gradew run --args="one two three"
+./gradlew run --args="one two three"
 ```
