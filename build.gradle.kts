@@ -30,7 +30,7 @@ repositories { mavenCentral() }
 
 dependencies {
   // https://docs.junit.org/current/user-guide/
-  testImplementation(platform("org.junit:junit-bom:6.0.1"))
+  testImplementation(platform("org.junit:junit-bom:6.0.2"))
   testImplementation("org.junit.jupiter:junit-jupiter")
 
   // https://kotlinlang.org/api/latest/kotlin.test/kotlin.test/
