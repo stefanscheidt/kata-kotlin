@@ -4,7 +4,7 @@ plugins {
   kotlin("jvm") version "2.3.0"
   application
 
-  id("com.diffplug.spotless") version "8.1.0"
+  id("com.diffplug.spotless") version "8.2.0"
 }
 
 kotlin {
