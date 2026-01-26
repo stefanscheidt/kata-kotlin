@@ -40,5 +40,5 @@ dependencies {
   testImplementation("io.kotest:kotest-assertions-core:6.1.1")
 
   // https://mockk.io/
-  testImplementation("io.mockk:mockk:1.14.7")
+  testImplementation("io.mockk:mockk:1.14.9")
 }
