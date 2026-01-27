@@ -37,7 +37,7 @@ dependencies {
   testImplementation(kotlin("test"))
 
   // https://kotest.io/docs/assertions/assertions.html
-  testImplementation("io.kotest:kotest-assertions-core:6.1.1")
+  testImplementation("io.kotest:kotest-assertions-core:6.1.2")
 
   // https://mockk.io/
   testImplementation("io.mockk:mockk:1.14.9")
