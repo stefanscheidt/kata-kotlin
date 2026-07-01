@@ -8,8 +8,8 @@ plugins {
 }
 
 kotlin {
-  jvmToolchain(21)
-  compilerOptions { jvmTarget = JvmTarget.fromTarget("21") }
+  jvmToolchain(25)
+  compilerOptions { jvmTarget = JvmTarget.fromTarget("25") }
 }
 
 tasks.test {

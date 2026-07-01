@@ -4,8 +4,8 @@ Baseline for katas using Kotlin with JUnit 6.
 
 ## Prerequisites
 
-* JDK 21
-* IDE support for Kotlin 2.2
+* JDK 25
+* IDE support for Kotlin 2.4
 
 You can install a Java SDK locally via [SDKMAN!](https://sdkman.io/) by issuing the command [`sdk env`](https://sdkman.io/usage#env) in this project root directory, see [.sdkmanrc](.sdkmanrc).
 
